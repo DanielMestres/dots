@@ -29,7 +29,7 @@ gaps inner 7
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/dani/Pictures/Backgrounds/cat-cup.png fill
+output * bg /home/dani/Pictures/Backgrounds/minimal-gundam.png fill
 #
 # Example configuration:
 #
