@@ -18,13 +18,17 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --allow-images --show run | xargs swaymsg exec --
+set $menu wofi --allow-images --show drun -G | xargs swaymsg exec --
 
 #
 # Style
 #
 default_border pixel 2
 gaps inner 7
+
+# class        border  backgr.  text    indicator  child_border
+client.focused #dd9999 #dd9999 #000000 #dd9999
+client.unfocused #a06666 #a06666 #000000 #a06666
 
 ### Output configuration
 #
