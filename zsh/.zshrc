@@ -11,7 +11,13 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+export PATH="$HOME/.config/emacs/bin:$PATH"
+
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CURRENT_DESKTOP=sway
+export EDITOR=emacsclient
+export VISUAL=emacsclient
 export LESSHISTFILE=-
+
+alias emacs="emacsclient -c -a 'emacs'"

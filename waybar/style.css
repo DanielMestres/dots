@@ -25,6 +25,7 @@
 @define-color bryellow	#fabd2f;
 @define-color brblue	#83a598;
 @define-color brpurple	#d3869b;
+@define-color brpurple1 #d9abb7;
 @define-color braqua	#8ec07c;
 @define-color white	#ebdbb2;
 @define-color bg2	#504945;
@@ -37,6 +38,7 @@
 @define-color focused	@braqua;
 @define-color inactive	@purple;
 @define-color sound	@brpurple;
+@define-color mpd @brpurple1;
 @define-color network	@purple;
 @define-color memory	@braqua;
 @define-color cpu	@green;
@@ -76,6 +78,7 @@
 #mode,
 #network,
 #pulseaudio,
+#mpd,
 #temperature,
 #tray,
 #backlight,
@@ -153,6 +156,11 @@
 #window {
 	margin-right: 35pt;
 	margin-left: 35pt;
+}
+
+#mpd {
+	background: @mpd;
+	color: @black;
 }
 
 #pulseaudio {
@@ -255,11 +263,17 @@
 #custom-arrow9 {
 	font-size: 11pt;
 	color: @sound;
-	background: transparent;
+	background: @mpd;
 }
 
 #custom-arrow10 {
 	font-size: 11pt;
 	color: @unfocused;
+	background: transparent;
+}
+
+#custom-arrow11 {
+	font-size: 11pt;
+	color: @mpd;
 	background: transparent;
 }
