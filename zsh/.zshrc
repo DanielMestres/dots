@@ -21,3 +21,4 @@ export VISUAL=emacsclient
 export LESSHISTFILE=-
 
 alias emacs="emacsclient -c -a 'emacs'"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
