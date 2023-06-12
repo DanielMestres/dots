@@ -1,4 +1,4 @@
-#files: 951	version: 5.9
+#files: 952	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -129,6 +129,7 @@ _comps=(
 'bunzip2' '_bzip2'
 'burst' '_mh'
 'busctl' '_busctl'
+'bwrap' '_bwrap'
 'bzcat' '_bzip2'
 'bzegrep' '_grep'
 'bzfgrep' '_grep'
@@ -1814,8 +1815,8 @@ bindkey '^[~' _bash_complete-word
 
 autoload -Uz _afew _android _archlinux-java _artisan _atach \
             _bitcoin-cli _bootctl _bower _bundle _busctl \
-            _caffeinate _cap _cargo _cask _ccache \
-            _cf _choc _chromium _cmake _code \
+            _bwrap _caffeinate _cap _cargo _cask \
+            _ccache _cf _choc _chromium _cmake \
             _coffee _composer _conan _concourse _console \
             _coredumpctl _cppcheck _curl _dad _debuild \
             _dget _dhcpcd _diana _docker _docpad \
