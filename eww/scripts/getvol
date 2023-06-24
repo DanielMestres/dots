@@ -1,0 +1,2 @@
+#!/bin/sh
+pactl get-sink-volume @DEFAULT_SINK@ | grep 'front-left:' | awk -F"[/]" '{ print $2 }' | tr -d '%' | tr -d '[:space:]'
