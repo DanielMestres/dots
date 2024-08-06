@@ -1,0 +1,18 @@
+[shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[terminal]
+osc52 = "CopyPaste"
+ 
+[cursor]
+style.shape = "Underline"
+style.blinking = "On"
+blink_interval = 500
+blink_timeout = 10
+
+[selection]
+save_to_clipboard = true
+
+[debug]
+log_level = "Warn"
