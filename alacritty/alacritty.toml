@@ -1,9 +1,23 @@
+[window]
+decorations = "None"
+
+[colors.primary]
+foreground = "#E0E0E0"
+background = "#021E20"
+
 [shell]
 program = "/bin/zsh"
 args = ["-l"]
 
 [terminal]
 osc52 = "CopyPaste"
+
+[font]
+normal = { family = "Maple Mono", style = "Regular" }
+bold = { style = "Bold" }
+italic = { style = "Italic" }
+bold_italic = { style = "Bold Italic" }
+size = 11.25
  
 [cursor]
 style.shape = "Underline"
