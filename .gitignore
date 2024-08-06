@@ -1,1 +1,11 @@
-*.histfile
+*.hist_zsh
+pavucontrol.ini
+
+# Personal directories
+rncbc.org/
+wireplumber/
+systemd/
+dconf/
+pulse/
+pipewire/
+Code/
