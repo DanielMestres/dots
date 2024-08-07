@@ -1,5 +1,8 @@
 [window]
 decorations = "None"
+padding.x = 5
+padding.y = 5
+dynamic_padding = true
 
 [colors.primary]
 foreground = "#E0E0E0"
