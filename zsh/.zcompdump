@@ -1,4 +1,4 @@
-#files: 808	version: 5.9
+#files: 818	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -122,6 +122,7 @@ _comps=(
 'bunzip2' '_bzip2'
 'burst' '_mh'
 'busctl' '_busctl'
+'bwrap' '_bwrap'
 'bzcat' '_bzip2'
 'bzegrep' '_grep'
 'bzfgrep' '_grep'
@@ -216,6 +217,7 @@ _comps=(
 'ctags' '_ctags'
 'ctags-exuberant' '_ctags'
 'ctags-universal' '_ctags'
+'ctr' '_ctr'
 'curl' '_curl'
 'cut' '_cut'
 'cvs' '_cvs'
@@ -260,6 +262,7 @@ _comps=(
 'dmesg' '_dmesg'
 'dmidecode' '_dmidecode'
 'doas' '_doas'
+'docker' '_docker'
 'domainname' '_yp'
 'dos2unix' '_dos2unix'
 'dotnet' '_dotnet'
@@ -319,6 +322,7 @@ _comps=(
 'extractres' '_psutils'
 'fakeroot' '_fakeroot'
 'false' '_nothing'
+'fastfetch' '_fastfetch'
 'fc' '_fc'
 'fc-list' '_xft_fonts'
 'fc-match' '_xft_fonts'
@@ -1289,6 +1293,10 @@ _comps=(
 'type' '_which'
 'typeset' '_typeset'
 'udevadm' '_udevadm'
+'udiskie' '_udiskie'
+'udiskie-mount' '_udiskie-mount'
+'udiskie-umount' '_udiskie-umount'
+'udisksctl' '_udisks2'
 'ulimit' '_ulimit'
 'uml_mconsole' '_uml'
 'uml_moo' '_uml'
@@ -1319,6 +1327,7 @@ _comps=(
 'unwrapdiff' '_patchutils'
 'unxz' '_xz'
 'unzip' '_zip'
+'upower' '_upower'
 'uptime' '_uptime'
 'urxvt' '_urxvt'
 'urxvt256c' '_urxvt'
@@ -1657,15 +1666,17 @@ bindkey '^[,' _history-complete-newer
 bindkey '^[/' _history-complete-older
 bindkey '^[~' _bash_complete-word
 
-autoload -Uz _alacritty _bootctl _busctl _cargo _code \
-            _coredumpctl _curl _dotnet _hostnamectl _hyprctl \
-            _hyprpm _journalctl _kernel-install _libinput _localectl \
-            _loginctl _machinectl _mkinitcpio _networkctl _oomctl \
-            _pacman _pikaur _playerctl _pulseaudio _resolvectl \
-            _run0 _rustup _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes \
-            _sd_unit_files _systemctl _systemd _systemd-analyze _systemd-delta \
-            _systemd-inhibit _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles \
-            _timedatectl _udevadm _varlinkctl _wpctl _cdr \
+autoload -Uz _alacritty _bootctl _busctl _bwrap _cargo \
+            _coredumpctl _ctr _curl _dkms _docker \
+            _dotnet _fastfetch _hostnamectl _hyprctl _hyprpm \
+            _journalctl _kernel-install _libinput _localectl _loginctl \
+            _machinectl _mkinitcpio _networkctl _oomctl _pacman \
+            _pikaur _playerctl _pulseaudio _resolvectl _run0 \
+            _rustup _sd_hosts_or_user_at_host _sd_machines _sd_outputmodes _sd_unit_files \
+            _systemctl _systemd _systemd-analyze _systemd-delta _systemd-inhibit \
+            _systemd-nspawn _systemd-path _systemd-run _systemd-tmpfiles _timedatectl \
+            _udevadm _udiskie _udiskie-canonical_paths _udiskie-mount _udiskie-umount \
+            _udisks2 _upower _varlinkctl _wpctl _cdr \
             _all_labels _all_matches _alternative _approximate _arg_compile \
             _arguments _bash_completions _cache_invalid _call_function _combination \
             _complete _complete_debug _complete_help _complete_help_generic _complete_tag \

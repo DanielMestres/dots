@@ -8,4 +8,7 @@ systemd/
 dconf/
 pulse/
 pipewire/
-Code/
+PrusaSlicer/
+go/
+godot/
+gtk-3.0/

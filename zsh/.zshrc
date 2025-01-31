@@ -8,11 +8,15 @@ unsetopt beep
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/dani/.config/zsh/.zshrc'
+zstyle :compinstall filename '$ZDOTDIR/.zshrc'
 
-# Autocompletion
+# Autocompletion, with arrow-key interface
+zstyle ':completion:*' menu select
 autoload -Uz compinit && compinit
 
 # Prompt theme system
 autoload -Uz promptinit && promptinit
 # End of lines added by compinstall
+
+# Alias
+alias godot-mono="godot-mono --display-driver wayland"
