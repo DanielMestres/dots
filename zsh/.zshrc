@@ -18,5 +18,8 @@ autoload -Uz compinit && compinit
 autoload -Uz promptinit && promptinit
 # End of lines added by compinstall
 
+# Set PATH
+path+=('/home/dani/.cargo/bin')
+
 # Alias
 alias godot-mono="godot-mono --display-driver wayland"
